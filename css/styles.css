@@ -1,0 +1,99 @@
+:root{
+    --green: #008000;
+    --purple: #800080;
+    --black: #000000;
+}
+
+.navbar{
+    background-color: var(--black);
+}
+
+.navbar-brand img{
+    transition: transform 0.2s ease;
+}
+
+/* .maincontainer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url('../assets/fondo2.jpg');
+} */
+
+
+.timeline-item{
+    border-left: 3px solid var(--purple);
+    padding: 0 0 2rem 2rem;
+    position: relative;
+}
+
+.timeline-year{
+    font-weight: bold;
+    color: var(--green);
+}
+
+/* .timeline-title{
+    color: aliceblue;
+}
+
+.timeline-desc{
+    color: floralwhite;
+} */
+
+.timeline-item::before{
+    content: '';
+    left: -9px;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--green);
+    position: absolute;
+}
+
+.navbar-brand:hover img{
+    transform: scale(1.1) rotate(5deg);
+}
+
+.nav-link{
+    color: var(--purple);
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0;
+    transition: 0.2s;
+}
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--green);
+    transition: all 0.2s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after{
+    width: 100%;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    color: #ffffff;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+                      url('../assets/fondo2.jpg');
+    /* background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+}
+
+footer{
+    background-color: #ffffff;
+}
+
+/* .infocontainer{
+    background-color: #ffffff;
+}  */

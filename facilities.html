@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalaciones - IndependienteMMA</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:wght@300;400;500;700&display=swap">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Header dinámico -->
+    <div id="header-placeholder"></div>
+
+    <main class="flex-fill py-5">
+
+        <div class="container">
+
+            <!-- Título -->
+            <div class="text-center mb-5">
+                <h1 class="fw-bold text-white">Nuestras Instalaciones</h1>
+                <div class="mx-auto bg-light" style="width:60px; height:4px;"></div>
+            </div>
+
+            <div class="row align-items-center g-4">
+
+                <!-- Información -->
+                <div class="col-md-6">
+                    <div class="p-4 bg-white rounded shadow-sm">
+
+                        <h4 class="mb-3">Espacio diseñado para ti</h4>
+
+                        <p>
+                            En IndependienteMMA contamos con un espacio totalmente equipado
+                            para el entrenamiento de artes marciales mixtas. Nuestro gimnasio
+                            está diseñado para brindar seguridad, comodidad y rendimiento
+                            tanto a principiantes como a atletas de competencia.
+                        </p>
+
+                        <p>
+                            Disponemos de área de tatami para grappling, zona de striking con
+                            costales profesionales, área de fuerza y acondicionamiento físico,
+                            así como espacios amplios para entrenamiento funcional.
+                        </p>
+
+                        <ul class="list-unstyled mt-4">
+                            <li class="mb-2">
+                                <i class="bi bi-geo-alt-fill me-2"></i>
+                                Acambay, Estado de México
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-shield-check me-2"></i>
+                                Área segura y supervisada por entrenadores certificados
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-people-fill me-2"></i>
+                                Ambiente profesional y comunidad deportiva
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- Carrusel -->
+                <div class="col-md-6">
+
+                    <div id="carruselInstalaciones"
+                        class="carousel slide shadow-sm rounded overflow-hidden"
+                        data-bs-ride="carousel">
+
+                        <!-- Indicadores -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carruselInstalaciones"
+                                data-bs-slide-to="0" class="active"></button>
+
+                            <button type="button" data-bs-target="#carruselInstalaciones"
+                                data-bs-slide-to="1"></button>
+
+                            <button type="button" data-bs-target="#carruselInstalaciones"
+                                data-bs-slide-to="2"></button>
+
+                            <button type="button" data-bs-target="#carruselInstalaciones"
+                                data-bs-slide-to="3"></button>
+                        </div>
+
+                        <!-- Imágenes -->
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img src="assets/instalacion1.png"
+                                    class="d-block w-100"
+                                    alt="Área de tatami">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="assets/instalacion2.png"
+                                    class="d-block w-100"
+                                    alt="Zona de costales">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="assets/instalacion3.png"
+                                    class="d-block w-100"
+                                    alt="Área de entrenamiento funcional">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="assets/instalaciones4.png"
+                                    class="d-block w-100"
+                                    alt="Vista general del gimnasio">
+                            </div>
+
+                        </div>
+
+                        <!-- Controles -->
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carruselInstalaciones"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carruselInstalaciones"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ubicación -->
+            <div class="row mt-5">
+                <div class="col-12 text-center mb-4">
+                    <h4 class="text-white">Ubicación de nuestras instalaciones</h4>
+                </div>
+
+                <div class="col-12">
+                    <div class="ratio ratio-21x9 shadow-sm rounded overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d468.7897618762995!2d-99.84866922124404!3d19.953120512767413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d25717dc11a90d%3A0x8554eb7c79325fe4!2sCentro%20Universitario%20de%20Acambay%2C%20(preparatoria%20regional).!5e0!3m2!1ses-419!2smx!4v1771287794514!5m2!1ses-419!2smx"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer dinámico -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
